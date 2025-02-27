@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/netflix-favicon.png" type="image/x-icon">
+</head>
+<body>
+    
+
+    <div class = "bg"></div>
+    <header>
+        <a href="https://www.netflix.com/br/"><img src="images/netflix.png" id="logo" alt="netflix-logo"></a>
+    </header>
+
+
+    <section>
+        <form id="formulario">
+            <h1 class="entrar">Entrar</h1>
+
+            <fieldset id="fieldset1">
+                <input type="email" name="email" id="email" placeholder="Email" class="quest" required>
+                <input type="password" id="senha" maxlength="8" placeholder="Senha" class="quest" required>
+                <input type="submit" id="submit" value="Entrar">
+                <a id="esqsenha" href="https://www.netflix.com/br/LoginHelp" target="_blank"><p>Esqueceu a senha?</p></a>
+            </fieldset>
+        
+            <fieldset id="fieldset2">
+                <label for="lembrar">
+                    <input type="checkbox" id="lembrar" class="fieldset2-text lembrar"  >
+                    Lembre-se de mim
+                </label>
+
+            </fieldset>
+
+            <p class="novo">Novo por aqui?<a id ="assine" href="https://www.netflix.com/br/" target="_blank"> Assine agora.</a></p>
+
+            <fieldset id="saibamais">
+                <p>Esta pagina é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a id="saiba" >Saiba mais.</a></p>
+
+                <div id="saibamais-clique" class="hidden"><p>As informações recolhidas pelo Google reCAPTCHA estão sujeitas à Política de Privacidade e Termos de Uso, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google)</p></div>
+
+                
+            </fieldset>
+        </form>
+    </section>
+
+    <footer id="rodape">
+        <div>
+            <p>Duvidas? Ligue 0800 591 2876</p>
+        </div>
+        
+        <div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div><select name="" id=""></select></div>
+
+       
+    </footer>
+
+    <script>
+        var saibamais = document.getElementById('saiba')
+        saibamais.addEventListener('click', clicar)
+
+        function clicar() {
+            
+            var sbmcq = document.getElementById('saibamais-clique').style.display = "block"
+
+            saibamais.style.display = "none"
+
+            
+
+            
+
+        }
+    </script>
+    
+</body>
+</html>

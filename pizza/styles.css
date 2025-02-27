@@ -1,0 +1,67 @@
+body {
+    
+    
+    max-width: 500px;
+    margin: 0 auto;
+    
+    
+    
+    
+}
+
+form {
+   
+    align-items: center;
+    
+
+
+}
+
+fieldset {
+    border: none;
+    height: 400px;
+
+    
+}
+ 
+#pais {
+    display: block;
+    height: 39px;
+    width: 85%;
+    margin: 15px;
+    border-radius: 20px;
+    
+}
+input {
+    margin: 15px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#enviar {
+    background-color: #2563eb;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 38%;
+    height: 35px;
+    padding: 10px;
+
+    
+}
+
+#enviar:hover {
+    box-shadow: inset 1px 1px 10px 2px #173d91;
+}
+
+#telephono {
+    width: 82%;
+}
+
+h1 {
+    margin-bottom: -50;
+}
+
+   
