@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule a nota do Enem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calcule sua média do ENEM</h1>
+    </header>
+    <main>
+        <div id="princi">
+            <div id="cal">
+                <label for="mat">
+                    Matemática
+                    <input type="number" class="inpute" id="mat" min="0" max="1000">
+                </label>
+                <label for="huma">
+                    Humanas
+                    <input type="number" class="inpute" id="huma" max="1000">
+                </label>
+                <label for="ling">
+                    Linguagens
+                    <input type="number" class="inpute" id="ling" max="1000">
+                </label>
+                <label for="natu">
+                    Natureza
+                    <input type="number" class="inpute" id="natu" max="1000">
+                </label>
+                <label for="reda">
+                    Redação
+                    <input type="number" class="inpute" id="reda" max="100">
+                </label>
+                <button onclick="calcular()">Calcular</button>
+            </div>
+        </div>
+        <aside>
+            <div id="res">
+                <h1 id="nota">0</h1>
+            </div>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
