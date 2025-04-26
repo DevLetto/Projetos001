@@ -1,3 +1,3 @@
-# pizzaria
+# PROJETOS001
  
- Praticas de JS HTML e CSS
+ Praticas de JS, HTML e CSS
