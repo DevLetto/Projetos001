@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 89vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #0F2567, #4F1165 );
+    text-align: center;
+}
+
+header{
+    align-items: center;
+}
+
+header > h1{
+    
+    margin-top: 100px;
+    margin-bottom: -60px;
+    font-size: 4em;
+    color: white;
+    font-family: cursive;
+
+}
+
+.main {
+    background-image: linear-gradient(to bottom right,rgb(219, 219, 245), rgb(172, 190, 196));
+    box-shadow: 5px 2px 2px #4F1165 ;
+    height: 550px;
+    width: 500px;
+    margin: 135px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: end;
+}
+
+.list{
+    background-color: rgb(238, 238, 238);
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    width: 90%;
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow-y: auto;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+
+.listitem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.item{
+    margin: 10px 0px;
+    font-size: 2em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.feito{
+    text-decoration: line-through;
+    color: grey;
+}
+
+.excluir{
+    height: 2.5em;
+    margin: 12px 10px;
+    background-color: #c539a7;
+    border-radius: 10px;
+    transition: 0.6s;
+    
+}
+.excluir:hover{
+    background-color: #791f65;
+    
+}
+
+#btns { /*div principal*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#text{ /*Input text*/
+    width: 86%;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+#button{ /*Button*/
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 2em;
+    margin-left: -40px;
+    background-color: rgb(104, 104, 209);
+    transition: 0.6s;
+}
+
+#button:hover{
+    background-color: rgb(74, 74, 209);
+}
+
