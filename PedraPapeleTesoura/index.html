@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel ou Tesoura</h1>
+
+        <div class="scoreboard">
+            <p>Você: <span id="player-score">0</span></p>
+            <p>Máquina: <span id="computer-score">0</span></p>
+        </div>
+
+        <div class="choices">
+            <button onclick="pedra()" id="pedra">🪨 Pedra</button>
+            <button onclick="papel()" id="papel">📄 Papel</button>
+            <button onclick="tesoura()" id="tesoura">✂️ Tesoura</button>
+        </div>
+
+        <div class="result">
+            <p id="result-text">Faça sua escolha!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- onde você vai colocar sua lógica -->
+</body>
+</html>
