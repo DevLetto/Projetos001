@@ -53,8 +53,10 @@ function verificarTecla(event){
 
 
 function colorMode(){
-    
-    
 
-    
+    let body = document.body
+
+    body.classList.toggle('darkMode')
+
+
 }
