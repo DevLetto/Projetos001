@@ -53,10 +53,83 @@ function verificarTecla(event){
 
 
 function colorMode(){
+    
+
 
     document.body.classList.toggle('darkMode')
 
+    let color = document.getElementById('color')
+    let body = document.body
+    let dark = document.createElement("span")
+    let light = document.createElement("span")
+
+    dark.classList.add("material-symbols-outlined")
+    light.classList.add("material-symbols-outlined")
+
+    dark.textContent = "dark_mode"
+    light.textContent = "light_mode"
+    color.innerHTML = ""
+
+    console.log("chamou")
+    console.log(body.classList)
+
+    if(body.classList.contains('darkMode')){
+        color.appendChild(light)
+    } else{
+        color.appendChild(dark)
+    }
+
+
 }
+
+// let color = document.getElementById('color')
+
+// color.addEventListener("onload", function(){
+    
+//     let body = document.body
+//     let dark = document.createElement("span")
+//     let light = document.createElement("span")
+
+//     dark.classList.add("material-symbols-outlined")
+//     light.classList.add("material-symbols-outlined")
+
+//     dark.textContent = "dark_mode"
+//     light.textContent = "light_mode"
+//     color.innerHTML = ""
+
+//     console.log("chamou")
+//     console.log(body.classList)
+
+//     if(body.classList.contains('darkMode')){
+//         color.appendChild(light)
+//     } else{
+//         color.appendChild(dark)
+//     }
+
+// })
+
+// function verificarTema(){
+//     let body = document.body
+//     let dark = document.createElement("span")
+//     let light = document.createElement("span")
+
+//     dark.classList.add("material-symbols-outlined")
+//     light.classList.add("material-symbols-outlined")
+
+//     dark.textContent = "dark_mode"
+//     light.textContent = "light_mode"
+//     color.innerHTML = ""
+
+//     console.log("chamou")
+//     console.log(body.classList)
+
+//     if(body.classList.contains('darkMode')){
+//         color.appendChild(light)
+//     } else{
+//         color.appendChild(dark)
+//     }
+
+// }
 
 const mediaQuery = window.matchMedia("(min-width: 800px)");
 

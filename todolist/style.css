@@ -141,8 +141,8 @@ header > h1{
 
 #color{
     display: none;
-    background-color: var(--item-color);
-    box-shadow: 1px 5px 20px  var(--item-color);
+    background-color: var(--inputText-Bg);
+    /* box-shadow: 1px 5px 20px  var(--item-color); */
 }
 
 #button{ /*Button*/
