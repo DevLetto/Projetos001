@@ -21,9 +21,9 @@
 }
 
 .darkMode{
-    --bg-color1: #ffffff;
-    --bg-color2: #ffffff;
-    --header-color: #ffffff;
+    --bg-color1: #dbdbf5;
+    --bg-color2: #acbec4;
+    --header-color: #000000;
     --main-color1: #0F2567;
     --main-color2: #4F1165;
     --list-color: #000000;

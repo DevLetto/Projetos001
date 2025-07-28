@@ -1,11 +1,5 @@
 let texto = document.getElementById('text')
 let list = document.querySelector('.list')
-var p = document.createElement("p")
-var excluir = document.createElement("button")
-var simbolo = document.createElement("span")
-var listitem = document.createElement("div")
-let back = document.querySelector('.main')
-let button = document.getElementById('button')
 
 function adicionar(){
 
@@ -14,6 +8,10 @@ function adicionar(){
 
     }else{
         
+        var p = document.createElement("p")
+        var excluir = document.createElement("button")
+        var simbolo = document.createElement("span")
+        var listitem = document.createElement("div")
 
         excluir.classList.add("excluir")
         simbolo.classList.add('material-symbols-outlined')
@@ -52,11 +50,18 @@ function verificarTecla(event){
 }
 
 
+
+
 function colorMode(){
 
-    let body = document.body
-
-    body.classList.toggle('darkMode')
-
+    document.body.classList.toggle('darkMode')
 
 }
+
+const mediaQuery = window.matchMedia("(min-width: 800px)");
+
+mediaQuery.addEventListener("change", (e) => {
+    if (e.matches) {
+        document.body.classList.remove("darkMode");
+    }
+});
