@@ -146,7 +146,7 @@ section{
 
 .video-box div{
     height: 95%;
-    background-color: purple;
+    background-color: #252525;
     border-radius: 10px;
 }
 
@@ -159,4 +159,89 @@ section{
 .right-btn-container{
     display: flex;
     gap: 10px;
+    margin-top: 10px;
+}
+
+.left-btn-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+#channel-info  h4{
+    color: white;
+    
+}
+
+#channel-info  p{
+    color: #717171;
+    font-size: 0.8em;
+}
+
+.channel-pfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1C62B9;
+}
+
+.subscribe{
+    margin-left: 15px;
+    width: 109px;
+    height: 36px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9em;
+}
+
+
+.like-btn-box{
+    display: flex;
+    gap: 0px;
+    
+}
+
+.btn:not(.subscribe){
+    height: 36px;
+    background-color: #272727;
+    border: none;
+
+}
+
+/* .btn-box:not(.subscribe-btn-box){
+    background-color: #272727;
+    border: none;
+} */
+
+.like{
+    margin: 0;
+    width: 97px;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 15px;
+}
+
+.like::after{
+    content: "12 mil";
+    color: white;
+    margin-left: 10px;
+}
+
+.deslike{
+    margin: 0;
+    width: 52px;
+    border-radius: 0px 20px 20px 0px;
+    position: relative;
+}
+
+.deslike::after{
+  content: "";
+  position: absolute;
+  left: 0;             
+  top: 50%;             
+  transform: translateY(-50%); 
+  height: 60%;            
+  border-right: 1px solid #717171;
 }
