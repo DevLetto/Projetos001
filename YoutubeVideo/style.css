@@ -194,6 +194,12 @@ section{
     font-size: 0.9em;
 }
 
+.subscribe:hover{
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+
+
 
 .like-btn-box{
     display: flex;
@@ -201,17 +207,55 @@ section{
     
 }
 
+
 .btn:not(.subscribe){
     height: 36px;
     background-color: #272727;
     border: none;
 
 }
+.btn:not(.subscribe):hover{
+    background-color: #3F3F3F;
+    cursor: pointer;
+}
 
-/* .btn-box:not(.subscribe-btn-box){
-    background-color: #272727;
-    border: none;
-} */
+.btn:not(.subscribe, .like, .deslike, .more){
+    border-radius: 20px;
+    color: white;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 15px;
+    overflow: hidden;   
+}
+
+.more{
+    height: 36px;
+    border-radius: 50% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;   
+    color: white;
+    font-size: 1.2em; 
+    overflow: hidden;
+    position: relative;
+
+}
+
+.more::after{
+    content: "...";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    color: white;
+}
+
+
 
 .like{
     margin: 0;
