@@ -7,6 +7,22 @@
     overflow: auto;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar{
+    background-color: #0F0F0F;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb{
+    background-color: #ABABAB;
+}
+
+
+
+
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #0F0F0F;
@@ -18,6 +34,8 @@ body{
         'main section'
 
     ;
+
+    position: relative;
     
 }
 
@@ -37,21 +55,68 @@ header{
 main{
     background-color: #0F0F0F;
     grid-area: main;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     padding: 20px 10px 0px 85px;
 }
 
+aside{
+    background-color: #0F0F0F;
+    position: absolute;
+    height: 100%;
+    width: 240px;
+    left: -250px;
+    transition: 0.5s;
+    text-align: center;
+    overflow: auto;
+    scrollbar-color: white black;
+    scrollbar-width: thin;
+}
+
+.sideBar{
+    position: absolute;
+    left: 0px;
+    transition: 0.5s;
+}
+
 section{
     background-color: #0F0F0F;
     grid-area: section;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 }
+
+.videoLateral{
+    height: 94.5px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 5px;
+}
+
+.videoLImagem{
+    background-color: #252525;
+    height: 100%;
+    width: 168px;
+    border-radius: 10px;
+}
+
+.videoLText{
+    background-color: #222222;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
 
 .left-container{
     display: flex;
     gap: 20px;
+    align-items: center;
 
 }
 
@@ -68,14 +133,39 @@ section{
 
 
 }
+#menu-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+
+#menu-btn:hover{
+    background-color: #303030;
+    cursor: pointer;
+    
+}
 
 
 
 #noti-btn{
     height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+}
+
+#noti-btn:hover{
+    background-color: #2c2c2c;
+    cursor: pointer;
 }
 
 
@@ -109,6 +199,10 @@ section{
     
 }
 
+#search-btn:hover{
+    cursor: pointer;
+}
+
 
 
 #mic-btn{
@@ -121,9 +215,18 @@ section{
     justify-content: center;
 }
 
+#mic-btn:hover{
+    cursor: pointer;
+    background-color: #333333;
+}
+
 
 #ytbLogo{
     width: 100px;
+}
+
+.logo-img:hover{
+    cursor: pointer;
 }
 
 .user-pfp{
@@ -133,6 +236,10 @@ section{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+}
+
+.user-pfp:hover{
+    cursor: pointer;
 }
 
 .video-box{
@@ -173,6 +280,10 @@ section{
     
 }
 
+#channel-info h4:hover{
+    cursor: pointer;
+}
+
 #channel-info  p{
     color: #717171;
     font-size: 0.8em;
@@ -183,6 +294,10 @@ section{
     height: 40px;
     border-radius: 50%;
     background-color: #1C62B9;
+}
+
+.channel-pfp:hover{
+    cursor: pointer;
 }
 
 .subscribe{
