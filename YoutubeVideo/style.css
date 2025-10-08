@@ -4,7 +4,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    overflow: auto;
+    /* overflow: auto; */
 }
 
 html::-webkit-scrollbar,
@@ -37,6 +37,15 @@ body{
 
     position: relative;
     
+}
+
+#screenCover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #070707b2;
+    z-index: 800;
+    display: none;
 }
 
 header{
@@ -72,12 +81,13 @@ aside{
     overflow: auto;
     scrollbar-color: white black;
     scrollbar-width: thin;
+    z-index: 900;
 }
 
 .sideBar{
     position: absolute;
     left: 0px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 section{
@@ -87,7 +97,7 @@ section{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 10px;
+    padding: 20px 10px;
 }
 
 .videoLateral{

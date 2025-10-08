@@ -21,10 +21,20 @@ function carregar(){
 function showBar(){
     let sidebar = document.getElementById('sideBar')
     sidebar.classList.add('sideBar')
+    let cover = document.getElementById('screenCover')
+    cover.style.display = "block"
+    document.body.style.overflow = "hidden"
+
+    
 }
 
 function hideBar(){
     let sidebar = document.getElementById('sideBar')
     sidebar.classList.remove('sideBar')
+    let cover = document.getElementById('screenCover')
+    cover.style.display = "none"
+    document.body.style.overflow = ""
 }
+
+
 
